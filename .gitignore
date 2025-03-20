@@ -1,3 +1,4 @@
+awesome-cursorrules/
 # Ignore cloned repositories
 awesome-cursorrules/
 
@@ -20,3 +21,5 @@ Thumbs.db
 .idea/
 *.swp
 *.swo 
+# Environment variables
+.env

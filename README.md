@@ -55,6 +55,32 @@ The [ai-integration-patterns.cursorrules](./cursorrules/ai-integration-patterns.
 - AI system architecture recommendations
 - Security and privacy considerations
 
+## Tools and Utilities
+
+The repository includes several Python-based tools to support the Multi-Agent system:
+
+### LLM Integration
+
+- **[tools/plan_exec_llm.py](./tools/plan_exec_llm.py)**: Connects to powerful LLMs for planning and reasoning tasks
+- **[tools/llm_api.py](./tools/llm_api.py)**: A unified interface for querying different LLM providers (OpenAI, Anthropic, etc.)
+
+### Web Utilities
+
+- **[tools/web_scraper.py](./tools/web_scraper.py)**: Extracts content from web pages
+- **[tools/search_engine.py](./tools/search_engine.py)**: Performs web searches using various search engines
+
+## Examples
+
+The repository includes example setups for each specialized cursorrule:
+
+- **[Frontend Example](./examples/frontend-example/)**: Demonstrates how to use the frontend cursorrules in a Next.js project
+- **[Backend Example](./examples/backend-example/)**: Shows how to apply the backend cursorrules in a FastAPI project
+- **[AI Integration Example](./examples/ai-integration-example/)**: Illustrates the use of AI integration patterns
+
+## Getting Started
+
+See the [setup guide](./docs/setup.md) for detailed instructions on setting up and using MagicCursorrules.
+
 ## Usage
 
 1. Clone this repository
