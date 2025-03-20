@@ -1,0 +1,22 @@
+# Ignore cloned repositories
+awesome-cursorrules/
+
+# Dependency directories
+node_modules/
+venv/
+__pycache__/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo 

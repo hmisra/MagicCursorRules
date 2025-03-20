@@ -1,0 +1,110 @@
+# AI Integration Patterns Cursorrules
+
+## Project Purpose
+
+This cursorrules file provides guidelines and best practices for integrating AI models and services into applications. It covers patterns for effective AI integration, prompt engineering, model selection, and handling AI-specific challenges.
+
+## Technology Stack
+
+- OpenAI API (GPT-4, GPT-4o, GPT-4 Vision)
+- Claude API (Claude 3.5 Sonnet, Claude 3 Opus)
+- Hugging Face Transformers
+- LangChain/LlamaIndex for orchestration
+- Embedding models (text-embedding-3-large, etc.)
+- Vector databases (PostgreSQL + pgvector, Pinecone, Qdrant)
+- RAG (Retrieval Augmented Generation)
+
+## Integration Patterns
+
+### Prompt Engineering
+
+- Use clear, specific instructions in prompts
+- Break complex tasks into smaller steps
+- Provide examples for few-shot learning
+- Use system messages to define AI's role and constraints
+- Implement proper input validation before sending to AI
+- Use conversation history for context preservation
+
+### Model Selection
+
+- Choose models based on task complexity and requirements
+- Use cheaper, faster models for simple tasks
+- Reserve more capable models for complex reasoning
+- Consider latency, cost, and quality tradeoffs
+- Implement fallback mechanisms for model API failures
+
+### RAG Implementation
+
+- Create high-quality embeddings from source documents
+- Implement proper chunking strategies for text
+- Use semantic search to retrieve relevant context
+- Include metadata with chunks for better filtering
+- Implement hybrid search (semantic + keyword)
+- Use re-ranking to improve result quality
+
+### Chain-of-Thought Reasoning
+
+- Break complex problems into step-by-step reasoning
+- Provide intermediate outputs for verification
+- Implement validation for each reasoning step
+- Use structured output formats (JSON, XML) for easier parsing
+- Allow human-in-the-loop verification for critical decisions
+
+## AI System Architecture
+
+- Implement proper API client with retries and error handling
+- Use streaming for real-time responses
+- Implement caching for expensive model calls
+- Set up proper rate limiting and queueing
+- Use webhooks for long-running tasks
+- Implement proper logging for model inputs and outputs
+
+## Security and Privacy
+
+- Implement proper data sanitization before sending to AI
+- Use data minimization principles
+- Implement PII detection and redaction
+- Set up proper access controls for AI capabilities
+- Audit and log all AI interactions
+- Implement prompt injection protections
+
+## Performance Optimization
+
+- Batch requests when possible
+- Optimize token usage in prompts
+- Implement proper caching strategies
+- Use parallelization for independent AI tasks
+- Optimize embedding generation and storage
+
+## Evaluation and Testing
+
+- Implement comprehensive evaluation suites
+- Use human evaluation for subjective tasks
+- Compare multiple models on benchmark datasets
+- Test with adversarial inputs
+- Continuously monitor model performance
+
+## Error Handling and Fallbacks
+
+- Implement proper error handling for API failures
+- Use fallback strategies for failed AI requests
+- Set appropriate timeouts for API calls
+- Implement graceful degradation of AI features
+- Provide user-friendly error messages
+
+## Ethical Considerations
+
+- Implement content filtering for inputs and outputs
+- Provide transparency about AI use
+- Avoid reinforcing biases or harmful stereotypes
+- Consider environmental impact of model choices
+- Implement human oversight for sensitive applications
+
+## Best Practices
+
+- Start with simpler models and scale up as needed
+- Maintain a prompt library for reusable patterns
+- Log and version prompts for reproducibility
+- Implement proper testing for AI-powered features
+- Use structured formats for reliable parsing
+- Consider using tool augmentation for specialized tasks 

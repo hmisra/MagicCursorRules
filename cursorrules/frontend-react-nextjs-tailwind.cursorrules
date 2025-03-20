@@ -1,0 +1,90 @@
+# Frontend Development Cursorrules (React, Next.js, TypeScript, Tailwind)
+
+## Project Purpose
+
+This cursorrules file is specialized for frontend development using React, Next.js, TypeScript, and Tailwind CSS. It provides guidelines and best practices for building modern, accessible, and performant web applications.
+
+## Technology Stack
+
+- React 18+
+- Next.js (App Router)
+- TypeScript 5+
+- Tailwind CSS
+- shadcn/ui for UI components
+- Zustand for state management
+- React Query for data fetching
+
+## Project Structure
+
+- **/app**: Next.js app directory (routes based on file structure)
+- **/components**: Reusable UI components
+  - **/ui**: Low-level UI components (buttons, inputs, etc.)
+  - **/layouts**: Page layout components
+  - **/forms**: Form-related components
+  - **/modals**: Modal components
+- **/hooks**: Custom React hooks
+- **/lib**: Utility functions and shared logic
+- **/types**: TypeScript type definitions
+- **/public**: Static assets
+
+## Component Design Principles
+
+- Prefer functional components with hooks
+- Use TypeScript for all components
+- Follow the Atomic Design methodology
+- Create composable components with clear interfaces
+- Implement accessibility best practices (ARIA, keyboard navigation)
+- Add Storybook stories for UI components
+
+## Code Style
+
+- Use TypeScript for type safety
+- Implement proper error boundaries
+- Create custom hooks for reusable logic
+- Use Tailwind CSS for styling with consistent design tokens
+- Implement responsive design using Tailwind's responsive modifiers
+- Use server components for static content and client components for interactive elements
+
+## Performance Optimization
+
+- Implement code splitting and lazy loading
+- Use Next.js Image component for optimized images
+- Implement proper caching strategies
+- Use memoization for expensive calculations
+- Minimize re-renders using React.memo and useMemo
+
+## Data Fetching
+
+- Use React Query for client-side data fetching
+- Implement optimistic updates for better UX
+- Use proper error handling and loading states
+- Implement infinite scrolling for large data sets
+
+## State Management
+
+- Use Zustand for global state
+- Prefer local state with useState when possible
+- Implement proper state immutability
+
+## Testing
+
+- Write unit tests for components and hooks
+- Implement integration tests for complex interactions
+- Use React Testing Library and Jest for testing
+- Add Cypress for end-to-end testing
+
+## Accessibility
+
+- Implement proper semantic HTML
+- Use ARIA attributes where necessary
+- Ensure proper keyboard navigation
+- Maintain sufficient color contrast
+- Implement proper focus management
+
+## Best Practices
+
+- Follow DRY principles
+- Use code splitting for optimal performance
+- Implement proper error handling
+- Create reusable utility functions
+- Document complex logic and components 

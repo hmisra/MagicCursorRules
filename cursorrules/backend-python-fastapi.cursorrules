@@ -1,0 +1,103 @@
+# Backend Development Cursorrules (Python, FastAPI, SQLAlchemy)
+
+## Project Purpose
+
+This cursorrules file is specialized for backend API development using Python, FastAPI, and SQLAlchemy. It provides guidelines and best practices for building scalable, secure, and maintainable backend services.
+
+## Technology Stack
+
+- Python 3.11+
+- FastAPI 0.100+
+- Pydantic v2
+- SQLAlchemy 2.0+
+- Alembic for migrations
+- Pytest for testing
+- Asyncpg for PostgreSQL connections
+- Redis for caching
+- Docker for containerization
+
+## Project Structure
+
+- **/app**: Main application package
+  - **/api**: API routes and endpoints
+    - **/v1**: API version 1 routes
+  - **/core**: Core application functionality
+    - **/config**: Application configuration
+    - **/security**: Authentication and authorization
+  - **/db**: Database models and migrations
+    - **/migrations**: Alembic migration scripts
+    - **/models**: SQLAlchemy ORM models
+  - **/schemas**: Pydantic schemas for request/response validation
+  - **/services**: Business logic and service layer
+  - **/utils**: Utility functions and helpers
+- **/tests**: Test suite
+- **/docker**: Docker configuration
+
+## API Design Principles
+
+- Follow RESTful API design principles
+- Use resource-oriented URLs
+- Implement proper HTTP status codes
+- Use consistent error responses
+- Document API with OpenAPI/Swagger
+- Use versioning for API endpoints
+
+## Code Style
+
+- Follow PEP 8 style guide
+- Use type hints for all function signatures
+- Use async/await for I/O-bound operations
+- Prefer dependency injection
+- Use Pydantic models for request/response validation
+- Implement proper error handling and logging
+
+## Database Design
+
+- Use SQLAlchemy ORM for database interactions
+- Follow database normalization principles
+- Implement proper indexing for performance
+- Use migrations for database schema changes
+- Implement proper connection pooling
+- Use transactions for data consistency
+
+## Authentication and Security
+
+- Implement JWT-based authentication
+- Use HTTPS for all API endpoints
+- Implement proper password hashing
+- Use role-based access control
+- Protect against common security vulnerabilities (CSRF, XSS, etc.)
+- Implement rate limiting and throttling
+
+## Performance Optimization
+
+- Use async I/O for database queries
+- Implement caching for frequent queries
+- Use connection pooling for database connections
+- Implement pagination for large datasets
+- Use batch processing for bulk operations
+
+## Testing
+
+- Write unit tests for all services
+- Implement integration tests for API endpoints
+- Use test fixtures for database setup
+- Implement proper mocking for external dependencies
+- Use CI/CD for automated testing
+
+## Logging and Monitoring
+
+- Implement structured logging
+- Use correlation IDs for request tracking
+- Set up metrics collection
+- Implement proper error monitoring
+- Use health checks for service monitoring
+
+## Best Practices
+
+- Follow SOLID principles
+- Use dependency injection
+- Implement proper error handling
+- Create reusable utility functions
+- Document complex logic and functions
+- Use environment variables for configuration 
