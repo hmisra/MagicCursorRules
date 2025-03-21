@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of cursor rules for the MagicCursorrules project",
+  "rules": [
+    {
+      "id": "frontend",
+      "path": "rules/frontend.mdc",
+      "description": "Frontend development guidelines for React, Next.js, TypeScript, and Tailwind CSS",
+      "applies_to": ["**/*.{ts,tsx,js,jsx}", "app/**/*"]
+    },
+    {
+      "id": "backend",
+      "path": "rules/backend.mdc",
+      "description": "Backend development guidelines for Python and FastAPI applications",
+      "applies_to": ["**/*.py", "api/**/*.py", "app/**/*.py", "server/**/*.py"]
+    },
+    {
+      "id": "ai-integration",
+      "path": "rules/ai-integration.mdc",
+      "description": "Guidelines for integrating AI models, APIs, and tools into applications",
+      "applies_to": ["**/*.{py,ts,tsx,js,jsx}", "tools/**/*.py", "ai/**/*.*", "models/**/*.*"]
+    },
+    {
+      "id": "multi-agent",
+      "path": "rules/multi-agent.mdc",
+      "description": "Guidelines for implementing and working with multi-agent systems",
+      "applies_to": ["**/*.py", "examples/**/*.py", "tools/**/*.py"]
+    },
+    {
+      "id": "tooling",
+      "path": "rules/tooling.mdc",
+      "description": "Guidelines for implementing and using tools in the MagicCursorrules project",
+      "applies_to": ["tools/**/*.py", "**/*.py"]
+    }
+  ],
+  "metadata": {
+    "last_updated": "2023-03-20",
+    "compatible_cursor_version": ">=0.10.0"
+  }
+} 
