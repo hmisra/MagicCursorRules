@@ -1,4 +1,4 @@
-# MagicCursorrules Setup Guide
+# MagicCursorRules Setup Guide
 
 This guide will help you set up the MagicCursorrules environment and tools.
 
